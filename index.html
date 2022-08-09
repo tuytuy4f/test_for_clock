@@ -6,13 +6,13 @@
 </head> 
 <body>
 <script>
-  var offset;
-
-  document.write(
-    new Date(
-      new Date().getTime() + offset * 3600 * 1000
-    ).toUTCString().replace( / GMT$/, "" )
-  );
+var currentdate = new Date(); 
+var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
 </script>
 </body> 
 </html>
